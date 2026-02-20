@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 16px;
+}
+
+.content {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table th {
+    font-size: 14px;
+    color: var(--feedback-neutral);
+    font-weight: 500;
+}
+
+.table td {
+    font-size: 14px;
+    color: var(--text-main);
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.actionsCell {
+    display: flex;
+    gap: 12px;
+}
+
+.actionLink {
+    color: var(--brand-primary);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.actionLink:hover {
+    text-decoration: underline;
+}
+
+.actionDelete {
+    color: var(--feedback-error);
+    font-weight: 500;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.actionDelete:hover {
+    text-decoration: underline;
+}

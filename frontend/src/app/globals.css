@@ -1,0 +1,46 @@
+:root {
+  --brand-primary: #2563eb;
+  --feedback-success: #10b981;
+  --feedback-error: #ef4444;
+  --feedback-info: #3b82f6;
+  --feedback-neutral: #6b7280;
+  --surface-bg: #f9fafb;
+  --text-main: #111827;
+  --border-color: #e5e7eb;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--surface-bg);
+  color: var(--text-main);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+body {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* Base layouts */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}

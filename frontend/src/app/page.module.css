@@ -1,0 +1,36 @@
+.main {
+  min-height: calc(100vh - 64px - 100px);
+}
+
+.hero {
+  padding: 48px 0;
+  text-align: center;
+  background-color: var(--brand-primary);
+  color: white;
+  margin-bottom: 32px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: var(--text-main);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
