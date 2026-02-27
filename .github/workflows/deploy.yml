@@ -112,7 +112,7 @@ jobs:
           if [ -z "${{ secrets.VERCEL_PROJECT_ID }}" ]; then echo "❌ Erro: Secret VERCEL_PROJECT_ID está ausente."; exit 1; fi
 
       - name: Instalar Vercel CLI
-        run: npm install --global vercel@39.3.0
+        run: npm install --global vercel@latest
 
       - name: Pull Vercel Environment Information (Produção)
         working-directory: frontend
