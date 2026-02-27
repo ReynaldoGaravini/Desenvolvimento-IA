@@ -64,6 +64,12 @@ jobs:
       - name: Checkout do Repositório
         uses: actions/checkout@v4
 
+      - name: Checar presença de Secrets
+        run: |
+          if [ -z "${{ secrets.VERCEL_TOKEN }}" ]; then echo "❌ Erro: Secret VERCEL_TOKEN está ausente."; exit 1; fi
+          if [ -z "${{ secrets.VERCEL_ORG_ID }}" ]; then echo "❌ Erro: Secret VERCEL_ORG_ID está ausente."; exit 1; fi
+          if [ -z "${{ secrets.VERCEL_PROJECT_ID }}" ]; then echo "❌ Erro: Secret VERCEL_PROJECT_ID está ausente."; exit 1; fi
+
       - name: Instalar Vercel CLI
         run: npm install --global vercel@39.3.0
 
@@ -98,6 +104,12 @@ jobs:
     steps:
       - name: Checkout do Repositório
         uses: actions/checkout@v4
+
+      - name: Checar presença de Secrets
+        run: |
+          if [ -z "${{ secrets.VERCEL_TOKEN }}" ]; then echo "❌ Erro: Secret VERCEL_TOKEN está ausente."; exit 1; fi
+          if [ -z "${{ secrets.VERCEL_ORG_ID }}" ]; then echo "❌ Erro: Secret VERCEL_ORG_ID está ausente."; exit 1; fi
+          if [ -z "${{ secrets.VERCEL_PROJECT_ID }}" ]; then echo "❌ Erro: Secret VERCEL_PROJECT_ID está ausente."; exit 1; fi
 
       - name: Instalar Vercel CLI
         run: npm install --global vercel@39.3.0
